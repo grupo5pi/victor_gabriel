@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Calculando Gastos no Transporte da Carne</h1>
+    </center><br>
+
+    <center>
+         <b>Sobre dados da Boi Gordo, valor da arroba do boi está cotado hoje em R$ 312,00.</b> 
+    </center><br>
+
+    <center>valor da sua revenda por arroba: <input id="input_valor_gado" type="number"></center>
+
+    <center>quantidade de arroba vendida/mês: <input id="input_gado_vendido" type="number">
+        <center> <br>
+
+            <div id="div_resultado"></div>
+
+                <button onclick="calcular_preju()">Calcular prejuízo sofrido</button>
+
+</body>
+
+</html>
+<script> function calcular_preju(){
+    
+var arroba_gado = Number(input_valor_gado.value);
+var gado_vendido = Number(input_gado_vendido.value);
+
+var gado = Number(input_valor_gado.value * input_gado_vendido.value);
+var prejuizo = Number((gado / 100) * 35)
+var ganhos = Number((input_valor_gado.value * input_gado_vendido.value /100) * 25)
+
+div_resultado.innerHTML = ` valor das vendas de arroba = R$${gado} valor perdido em transportes de carnes no Brasil gira em média dos 35%, que infelizmente podem estar  trazendo um prejuízo de 
+ R$${prejuizo} para sua empresa. adquirindo nossos serviçoes especializados,seus rendimentos irião girar com um
+exelecentes ganhos de 25% sobre o valor total de arrobas vendidas que seriam = R$${ganhos} 
+
+
+
+
+
+
+
+`
+
+
+
+}
+
+
+
+</script>
